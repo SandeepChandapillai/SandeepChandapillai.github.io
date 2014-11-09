@@ -45,8 +45,8 @@
 					</div>
 					<div class="collapse navbar-collapse" id="navCollapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">Tutorials</a></li>
+							<li ><a href="#">Home</a></li>
+							<li><a href="Tutorial.html">Tutorials</a></li>
 
 							<li><a href="#">About</a></li>
 						</ul>
@@ -191,9 +191,25 @@
 				  <img src="http://placehold.it/350/398439/fff&amp;text=Image+Holder" alt="placeholder" class="featurette-image img-responsive">
 				</div>
 			  </div>
-			  <!-- /END THE FEATURETTES -->
+			  
 			
 			   <hr class="featurette-divider">
+					<!-- /Programming Tutorial-->
+					<hr class="featurette-divider">
+			  
+			  <div class="row featurette">
+				<div class="col-md-7">
+				  <h2 class="featurette-heading">Programming Basics<span class="text-muted">....In 10 Different Languages.</span></h2>
+				  <p class="lead">Come here if you want to see how the basics of programming are implemented in different Languages</p>
+					<a href="Tutorial.html" class="btn btn-success btn-block"  role="button">Go There</a>
+				</div>
+                  <br />
+				<div class="col-md-5 text-center">
+				  <img src="images/9.jpg" alt="placeholder" class="featurette-image img-responsive">
+				</div>
+			  </div>
+			  
+				 <hr class="featurette-divider">
 			<!-- FOOTER -->
 			<footer class="container-fluid">
 			  <p class="pull-right"><a href="#">Back to top</a></p>
@@ -212,66 +228,66 @@
 		 //For SLIDER
 			$(function() {
 			
-			    var Page = (function () {
+				var Page = (function () {
 
-			        var $navArrows = $('#nav-arrows'),
+					var $navArrows = $('#nav-arrows'),
 						$nav = $('#nav-dots > span'),
 						slitslider = $('#slider').slitslider({
-						    onBeforeChange: function (slide, pos) {
+							onBeforeChange: function (slide, pos) {
 
-						        $nav.removeClass('nav-dot-current');
-						        $nav.eq(pos).addClass('nav-dot-current');
+								$nav.removeClass('nav-dot-current');
+								$nav.eq(pos).addClass('nav-dot-current');
 
-						    }
+							}
 						}),
 
 						init = function () {
 
-						    initEvents();
+							initEvents();
 
 						},
 						initEvents = function () {
 
-						    // add navigation events
-						    $navArrows.children(':last').on('click', function () {
+							// add navigation events
+							$navArrows.children(':last').on('click', function () {
 
-						        slitslider.next();
-						        return false;
+								slitslider.next();
+								return false;
 
-						    });
+							});
 
-						    $navArrows.children(':first').on('click', function () {
+							$navArrows.children(':first').on('click', function () {
 
-						        slitslider.previous();
-						        return false;
+								slitslider.previous();
+								return false;
 
-						    });
+							});
 
-						    $nav.each(function (i) {
+							$nav.each(function (i) {
 
-						        $(this).on('click', function (event) {
+								$(this).on('click', function (event) {
 
-						            var $dot = $(this);
+									var $dot = $(this);
 
-						            if (!slitslider.isActive()) {
+									if (!slitslider.isActive()) {
 
-						                $nav.removeClass('nav-dot-current');
-						                $dot.addClass('nav-dot-current');
+										$nav.removeClass('nav-dot-current');
+										$dot.addClass('nav-dot-current');
 
-						            }
+									}
 
-						            slitslider.jump(i + 1);
-						            return false;
+									slitslider.jump(i + 1);
+									return false;
 
-						        });
+								});
 
-						    });
+							});
 
 						};
 
-			        return { init: init };
+					return { init: init };
 
-			    })();
+				})();
 
 				Page.init();
 				
