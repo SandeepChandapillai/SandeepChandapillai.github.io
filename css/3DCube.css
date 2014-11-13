@@ -1,0 +1,131 @@
+﻿body {
+    background: white;
+    color: silver;
+}
+
+#cube {
+    position: relative;
+    margin: auto;
+    height: 270px;
+    width: 270px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(0deg) rotateY(20deg);
+    -moz-transform: rotateX(0deg) rotateY(20deg);
+    -ms-transform: rotateX(0deg) rotateY(20deg);
+    -o-transform: rotateX(0deg) rotateY(20deg);
+    transform: rotateX(0deg) rotateY(20deg);
+    /* CSS 3 animation */
+    -webkit-animation: animate1 ease-in-out 20s infinite alternate;
+    -moz-animation: animate1 ease-in-out 20s infinite alternate;
+    -o-animation: animate1 ease-in-out 20s infinite alternate;
+    animation: animate1 ease-in-out 20s infinite alternate;  
+}
+
+
+
+@-webkit-keyframes animate1 {
+    from {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+
+    to {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes animate1
+    {
+        from {transform: rotateY(0deg);}
+        50% { transform: rotateY(360deg);}
+        to {transform: rotateY(0deg); }
+
+    }
+
+
+
+#cube-container {
+    margin: 0px;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    perspective: 1200px;
+
+    -webkit-perspective-origin: 50% 200px;
+    -moz-perspective-origin: 50% 200px;
+    -ms-perspective-origin: 50% 200px;
+    perspective-origin: 50% 200px;
+}
+
+.face {
+    position: absolute;
+    /* relative places them one by one , absolute stakes them all on top of each other*/
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#F1 {
+    /*Rotates upward by 90 and then comes out of stack by half the width ie 150 px*/
+    -webkit-transform: rotateX(90deg) translateZ(150px);
+    -moz-transform: rotateX(90deg) translateZ(150px);
+    -ms-transform: rotateX(90deg) translateZ(150px);
+    -o-transform: rotateX(90deg) translateZ(150px);
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+#F2 {
+    /*comes out of stack by half the width ie 150 px*/
+    -webkit-transform: translateZ(150px);
+    -moz-transform: translateZ(150px);
+    -ms-transform: translateZ(150px);
+    -o-transform: translateZ(150px);
+    transform: translateZ(150px);
+}
+
+#F3 {
+    /*comes out of stack by half the width ie 150 px*/
+    -webkit-transform: rotateY(90deg) translateZ(150px);
+    -moz-transform: rotateY(90deg) translateZ(150px);
+    -ms-transform: rotateY(90deg) translateZ(150px);
+    -o-transform: rotateY(90deg) translateZ(150px);
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+#F4 {
+    /*comes out of stack by half the width ie 150 px*/
+    -webkit-transform: rotateY(180deg) translateZ(150px);
+    -moz-transform: rotateY(180deg) translateZ(150px);
+    -ms-transform: rotateY(180deg) translateZ(150px);
+    -o-transform: rotateY(180deg) translateZ(150px);
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+#F5 {
+    /*comes out of stack by half the width ie 150 px
+        Coutner colckwise is negative */
+    -webkit-transform: rotateY(-90deg) translateZ(150px);
+    -moz-transform: rotateY(-90deg) translateZ(150px);
+    -ms-transform: rotateY(-90deg) translateZ(150px);
+    -o-transform: rotateY(-90deg) translateZ(150px);
+    transform: rotateY(-90deg) translateZ(150px);
+}
+
+
+
+#F6 {
+    /*comes out of stack by half the width ie 150 px*/
+    -webkit-transform: rotateX(-90deg) translateZ(150px) rotate(180deg);
+    -moz-transform: rotateX(-90deg) translateZ(150px) rotate(180deg);
+    -ms-transform: rotateX(-90deg) translateZ(150px) rotate(180deg);
+    -o-transform: rotateX(-90deg) translateZ(150px) rotate(180deg);
+    transform: rotateX(-90deg) translateZ(150px) rotate(180deg);
+}
