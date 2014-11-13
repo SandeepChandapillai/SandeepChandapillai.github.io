@@ -6,8 +6,8 @@
 #cube {
     position: relative;
     margin: auto;
-    height: 270px;
-    width: 270px;
+    height: 100px;
+    width: 100px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transform: rotateX(0deg) rotateY(20deg);
@@ -53,10 +53,10 @@
 
 #cube-container {
     margin: 0px;
-    -webkit-perspective: 1200px;
-    -moz-perspective: 1200px;
-    -ms-perspective: 1200px;
-    perspective: 1200px;
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    -ms-perspective: 2000px;
+    perspective: 2000px;
 
     -webkit-perspective-origin: 50% 200px;
     -moz-perspective-origin: 50% 200px;
@@ -67,10 +67,10 @@
 .face {
     position: absolute;
     /* relative places them one by one , absolute stakes them all on top of each other*/
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     padding: 15px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
 }
 
 #F1 {
