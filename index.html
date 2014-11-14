@@ -5,7 +5,9 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>This is Temporary</title>
-
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css2.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
@@ -23,13 +25,14 @@
 	</noscript>
 	
 	<script src="js/modernizr-2.6.2.js"></script>
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
+
 	<script src="http://thejakeharding.com/ghostwriter/releases/latest/ghostwriter.js"></script>
     <!-- CSS 3D CUBE -->
 	<link rel="stylesheet" type="text/css" href="css/3DCube.css" />
 
 
 	<style>
+
 
 		.container_marketing { margin-right: +100px; margin-left: +100px; }
 
@@ -50,7 +53,7 @@
 					</div>
 					<div class="collapse navbar-collapse" id="navCollapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li ><a href="index.html">Home</a></li>
+							<li><a href="index.html">Home</a></li>
 							<li><a href="Tutorial.html">Tutorials</a></li>
 
 							<li><a href="#">About</a></li>
@@ -136,15 +139,118 @@
 
 			<!--The rest of your page content below-->
 	<div class="container_marketing" >
+
+           <!--   <div class = "well well-small visible-sm" id=""><Strong>We render better on larger screens</Strong></div> -->
 			  	 
-			  <!-- START THE FEATURETTES -->			  
+			  <!-- START THE FEATURETTES -->
+        
+        
+        
+        	<div class="row featurette">
+				<div class="col-md-7">
+				  <h2 class="featurette-heading">Line Following Robot<span class="text-muted">...Minimalistic</span></h2>
+				  <p class="lead" >A simple Line Following Robot made with arduino , two IR sensors , Servo and a bang bang controller as its brain</p>
+                              <div class="row text-center">
+					                    <a href="#videoModal1" class="btn btn-warning"  role="button" data-toggle="modal"><span class="glyphicon glyphicon-film"></span>  Watch Video </a>
+                                        <a href="Tutorial.html" class="btn btn-default"  role="button" >  Details   <span class="glyphicon glyphicon-chevron-right"></span></a>
+                               </div>
+				</div>
+				  <br />
+				<div class="col-md-5 text-center">
+				  <img src="images/lineFollowing.png" alt="placeholder" class="featurette-image img-rounded img-responsive">
+				</div>
+
+
+                                <!--videoModal-->
+                    <div class="modal" id="videoModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel"><a color="Black">Line Following Robot</a></h4>
+                          </div>
+                          <div class="modal-body">
+                              <div class="text-center">
+                             <iframe width="420" height="315" src="http://www.youtube.com/embed/AcQ5PTFRgHk?rel=0" frameborder="0" allowfullscreen ?html5=1></iframe>
+                               </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>            
+			</div>		
+
+
+
+
+
+
+
+
+              <hr class="featurette-divider">
+			  
+			  <div class="row">
+				<div class="col-md-7 col-md-push-5">
+				  <h2 class="featurette-heading">Self Made Robotic Arm<span class="text-muted">...Drove me nuts</span></h2>
+				  <p class="lead"> An arm that was modeled on the human arm , capable of performing all motions , except those involving the fingers .
+                      It used 4 servos and had joints similar to our shoulders and elbow.The arm was made by using cheap Continuous Rotation Servo , which rendered controlling its motion very difficult.
+                      Scraped the project in the end , as the amount of time required to program even simple tasks rendered the development of more advanced tasks 
+                      impractical.
+				  </p>
+					 <div class="row text-center">
+					                    <a href="#videoModal2" class="btn btn-warning"  role="button" data-toggle="modal"><span class="glyphicon glyphicon-film"></span>  Watch Video </a>
+                                        <a href="Tutorial.html" class="btn btn-default"  role="button" >  Details   <span class="glyphicon glyphicon-chevron-right"></span></a>
+                   </div>
+				</div>
+
+				  <br />
+				<div class="col-md-5 col-md-pull-7 text-center">
+				  <img src="images/robotArm.png" alt="placeholder" class="featurette-image img-responsive img-rounded">
+				</div>   
+
+                    <div class="modal" id="videoModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="H1"><a color="Black">Robotics Arm Waving</a></h4>
+                          </div>
+                          <div class="modal-body">
+                              <div class="text-center">
+                                  <iframe width="420" height="315" src="http://www.youtube.com/embed/CoexI-UMXWk?rel=0" frameborder="0" allowfullscreen ?html5=1></iframe>
+                            
+                               </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>     
+                  
+    
+                   
+			  </div>    
+
+
+
+
+
+
+
+
+
+                        
+                <hr class="featurette-divider">	  
 			  
 			  <div class="row featurette">
 				<div class="col-md-7">
 				  <h2 class="featurette-heading">Natural Language Processing<span class="text-muted">It'll blow your mind.</span></h2>
-				  <p class="lead">Small Programs written to have a better understanding about NLP.Basic NLP possible , escpecially with Python NLTK Library .But a long way to go to develop decent proficiency .</p>
+				  <p class="lead" >Small Programs written to have a better understanding about NLP.Basic NLP possible , escpecially with Python NLTK Library .But a long way to go to develop decent proficiency .</p>
 					 <div class="col-md-4 text-center"> 
-					<a href="Tutorial.html" class="btn btn-default "  role="button" ><span class="glyphicon glyphicon-arrow-right"></span></a>
+					<a href="Tutorial.html" class="btn btn-default"  role="button" ><span class="glyphicon glyphicon-arrow-right"></span></a>
 					</div>
 				</div>
 				  <br />
@@ -153,6 +259,17 @@
 				</div>
 			  </div>
 			  
+
+
+
+
+
+
+
+
+
+
+
 				 <hr class="featurette-divider">
 			  
 			  <div class="row">
@@ -169,6 +286,16 @@
 				</div>    
 			  </div>
 			  
+
+
+
+
+
+
+
+
+
+
 				 <hr class="featurette-divider">
 			  
 			  <div class="row">
@@ -185,6 +312,17 @@
 				</div>
 			  </div>
 			  
+
+
+
+
+
+
+
+
+
+
+
 			
 			   <hr class="featurette-divider">
 					<!-- /Programming Tutorial-->
@@ -203,6 +341,22 @@
 				  <img src="images/9.jpg" alt="placeholder" class="featurette-image img-responsive">
 				</div>
 			  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			<hr class="featurette-divider">
 
 				<div class="row featurette">
@@ -219,6 +373,21 @@
 				  <img src="images/9.jpg" alt="placeholder" class="featurette-image img-responsive">
 				</div>
 			  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 			   <hr class="featurette-divider">
 					<!-- CSS 3D Cube-->
