@@ -764,8 +764,55 @@
 				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
 		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
-	
-		<script type="text/javascript">	
+	    
+
+
+
+
+
+
+
+
+
+
+        <script >	
+            //To make the videos close after modal
+            $(document).ready(function () {
+                $('.modal').each(function () {
+                    var src = $(this).find('iframe').attr('src');
+
+                    $(this).on('click', function () {
+
+                        $(this).find('iframe').attr('src', '');
+                        $(this).find('iframe').attr('src', src);
+
+                    });
+                });
+            });
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript">	
+
+
+            
 		 //For SLIDER
 			$(function() {
 			
