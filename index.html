@@ -107,7 +107,7 @@
 								<div class="sl-slide-inner">
 									<div class="bg-img bg-img-4"></div>
 									<h2 class="h2-4">Parallel Computing</h2>
-									<blockquote><p><font color="Red"><b>Using NVDIA's CUDA Platform and MPI applied to Personal Cluster</b></font></p><a class="btn btn-sm" href="https://github.com/SandeepChandapillai/MPI" role="button"><cite><font color="Red"> In Progress  <span class="glyphicon glyphicon-chevron-right">  </font></cite></a></blockquote>
+									<blockquote><p><font color="Red"><b>Using NVDIA's CUDA Platform and MPI applied to Personal Cluster</b></font></p><a class="btn btn-sm" href="https://github.com/SandeepChandapillai/MPI1" role="button"><cite><font color="Red"> In Progress  <span class="glyphicon glyphicon-chevron-right">  </font></cite></a></blockquote>
 								</div>
 							</div>
 					
@@ -115,7 +115,7 @@
 								<div class="sl-slide-inner">
 									<div class="bg-img bg-img-5"></div>
 									<h2 class="h2-5">Robotic Bloom</h2>
-									<blockquote><p><font color="RoyalBlue"><b>Projects involving creation of small scale Robots using an Arduino or by using a ATMEL AVR chip directly </b></font></p><a class="btn btn-sm" href="https://github.com/SandeepChandapillai/Data_Collection" role="button"><cite><font color="RoyalBlue"> In Progress  <span class="glyphicon glyphicon-chevron-right">  </font></cite></a></blockquote>
+									<blockquote><p><font color="RoyalBlue"><b>Projects involving creation of small scale Robots using an Arduino or by using a ATMEL AVR chip directly </b></font></p><a class="btn btn-sm" href="#Robot" role="button"><cite><font color="RoyalBlue"> In Progress  <span class="glyphicon glyphicon-chevron-right">  </font></cite></a></blockquote>
 								</div>
 							</div>
 						</div><!-- /sl-slider -->
@@ -156,7 +156,7 @@
 
 
 		
-			<div class="row featurette">
+			<div class="row featurette" id="Robot">
 				<div class="col-md-7">
 				  <h2 class="featurette-heading">Line Following Robot<span class="text-muted">...Minimalistic</span></h2>
 				  <p class="lead" >A simple Line Following Robot made with arduino , two IR sensors , Servo and a bang bang controller as its brain</p>
@@ -321,7 +321,7 @@
 
         			  <hr class="featurette-divider">
 			  
-			  <div class="row">
+			  <div class="row" id="3bit">
 				<div class="col-md-7 col-md-push-5">
 				  <h2 class="featurette-heading">3 Bit-Binary-Adder<span class="text-muted">...Slightly Flawed</span></h2>
 				  <p class="lead"> A binary Adder made up by using OR , AND , XOR gates . The gates are present in the IC chips.
@@ -331,7 +331,23 @@
 				  </p>
 					 <div class="row text-center">
 										<a href="#videoModal4" class="btn btn-warning"  role="button" data-toggle="modal"><span class="glyphicon glyphicon-film"></span>  Watch Video </a>
-										<a href="Tutorial.html" class="btn btn-default"  role="button" >  Details   <span class="glyphicon glyphicon-chevron-right"></span></a>
+										<a href="#3bit" class="btn btn-default"  role="button" >  Details   <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+
+
+
+                          <a href="./images/010+010.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="010+010" class="btn btn-danger"  role="button">See Pictures <span class="glyphicon glyphicon-picture"></span>  </a>
+                                
+                            
+                            <div class=" hide">
+							    <a href="./images/011+000.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="011+000" class="col-sm-4"></a>
+                                <a href="./images/011+010.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="011+010" class="col-sm-4"></a>
+                                <a href="./images/100 + 001.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="100 + 001" class="col-sm-4"> </a>
+                                <a href="./images/100+010.jpg" data-toggle="lightbox" data-gallery="multiimages" data-footer="100+010" class="col-sm-4"></a>
+                            </div>
+
+
+
 				   </div>
 				</div>
 
@@ -583,7 +599,7 @@
 				  <h2 class="featurette-heading"> Data Analysis <span class="text-muted">..Almost</span></h2>
 				  <p class="lead">Decent familiarity with Python Pandas , Numpy ,Scipy amd Skipt-Learn . Spend a large portion of my time trying to gain a proper understanding . </p>
 					  <div class="text-center"> 
-					<a href="https://github.com/SandeepChandapillai/Data_Collection" class="btn btn-default "  role="button" >Visit GitHub Repository <span class="glyphicon glyphicon-chevron-right"></span></a>
+					<a href="https://github.com/SandeepChandapillai/MPI" class="btn btn-default "  role="button" >Visit GitHub Repository <span class="glyphicon glyphicon-chevron-right"></span></a>
 					</div>
 				</div>
 				  <br />
@@ -591,6 +607,49 @@
 				  <img src="images/11.jpg" alt="placeholder" class="featurette-image img-responsive img-rounded">
 				</div>
 			  </div>
+
+
+
+
+
+        
+				 <hr class="featurette-divider">
+			  
+			  <div class="row" id="cluster">
+				<div class="col-md-7 col-md-push-5">
+				  <h2 class="featurette-heading"> Mini Super Computer <span class="text-muted">...Slow , frankly</span></h2>
+				  <p class="lead"> I wanted to learn more about Hadoop , MPi etc to do Data Analysis. So I built this cluster using 4 Raspberry Pi . I could not get Hadoop to run on it , but I am able to use MPI to create simple programs.
+                      If we overclock each Raspberry Pi's then we get a processing speed of 4 GHz .In practice a program will take longer to run on this than on a computer of slower speeds
+                      <br />
+                      Future Plans :
+                      <br />
+                        The final aim is to build an application that can predict diseases based on the symptoms, I plan to use these guys 
+                        to do the collection and also the data analysis that is required.
+				  </p>
+					  <div class=" row text-center"> 
+					<a href="https://github.com/SandeepChandapillai/Data_Collection" class="btn btn-default "  role="button" >Visit GitHub Repository <span class="glyphicon glyphicon-chevron-right"></span></a>
+                      <a href="./images/rasp1.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Raspberry PI" class="btn btn-danger"  role="button">See Pictures <span class="glyphicon glyphicon-picture"></span>  </a>
+                                
+                            
+                            <div class=" hide">
+							    <a href="./images/rasp2.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="4 Raspberry PI" class="col-sm-4"></a>
+                                <a href="./images/rasp3.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Container" class="col-sm-4"></a>
+                                <a href="./images/rasp4.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Raspberry PI and Container" class="col-sm-4"> </a>
+                                <a href="./images/rasp5.jpg" data-toggle="lightbox" data-gallery="multiimages" data-footer="Container at Night" class="col-sm-4"></a>
+                            </div>
+
+					</div>
+				</div>
+				  <br />
+				<div class="col-md-5 col-md-pull-7 text-center">
+				  <img src="images/rasp1small.jpg" alt="placeholder" class="featurette-image img-responsive img-rounded">
+				</div>
+			  </div>
+
+
+
+
+
 
 
 
@@ -630,6 +689,8 @@
 
 
 
+
+
         <!--
 			
 			   <hr class="featurette-divider">
@@ -650,6 +711,7 @@
 				</div>
 			  </div>
         -->
+
 
 
 
@@ -779,12 +841,7 @@
 			</footer>
 		</div>
 			
-		<script src="js/jquery-1.10.2.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script src="js/respond.js"></script>
-				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
-		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+
 	    
 
 
@@ -796,9 +853,63 @@
 
 
 
+        <!-- Image Gallery -->
+
+
+        <script src="./js/jquery.js"></script>
+
+		<script src="./js/ekko-lightbox-min.js"></script>
+		<script type="text/javascript">
+		    $(document).ready(function ($) {
+
+		        $(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
+		            event.preventDefault();
+		            return $(this).ekkoLightbox({
+		                onShown: function () {
+		                    if (window.console) {
+		                        return console.log('Checking our the events huh?');
+		                    }
+		                },
+		                onNavigate: function (direction, itemIndex) {
+		                    if (window.console) {
+		                        return console.log('Navigating ' + direction + '. Current item: ' + itemIndex);
+		                    }
+		                }
+		            });
+		        });
+
+		        //Programatically call
+		        $('#open-image').click(function (e) {
+		            e.preventDefault();
+		            $(this).ekkoLightbox();
+		        });
+
+		    });
+		</script>
+        <script src="./js/bootstrap.min.js"></script>
 
 
 
+
+
+        <!-- DO NOT CHANGE THE ORDERING -->
+
+
+
+
+
+
+
+
+
+
+
+        <script src="js/jquery-1.10.2.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/respond.js"></script>
+				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
 
 
         <script >	

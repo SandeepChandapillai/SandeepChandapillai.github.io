@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bootstrap 3 Lightbox</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://rawgithub.com/ashleydw/lightbox/master/dist/ekko-lightbox.css" rel="stylesheet">
+
+ </head>
+    <body class="" style="">
+        <div class="container">
+
+
+
+
+
+				
+
+
+
+   
+
+                    
+                                <a href="./images/1.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="People walking down stairs" class="col-sm-4">
+										Button
+                                </a>
+                                
+                            
+                            <div class=" hide">
+							<a href="./images/2.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Man getting wet" class="col-sm-4">
+                                    
+                                </a>
+                                <a href="./images/6.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Someone lost their dress" class="col-sm-4">
+                                    
+                                </a>
+                                <a href="./images/3.jpg" data-toggle="lightbox" data-gallery="multiimages" data-footer="Big ass waterfall- using footer instead of title" class="col-sm-4">
+                                  
+                                </a>
+                                <a href="./images/4.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Cool bottle" data-footer="Now fill it with whiskey" class="col-sm-4">
+                                    
+                                </a>
+                                <a href="./images/5.jpg" data-toggle="lightbox" class="col-sm-4">
+                                  
+                                </a>
+                            </div>
+                        </div>
+
+
+                                
+                            </div>
+
+
+ 
+
+        <script src="./js/jquery.js"></script>
+
+		<script src="./js/ekko-lightbox-min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function ($) {
+
+				$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+					event.preventDefault();
+					return $(this).ekkoLightbox({
+						onShown: function() {
+							if (window.console) {
+								return console.log('Checking our the events huh?');
+							}
+						},
+						onNavigate: function(direction, itemIndex) {
+							if (window.console) {
+								return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+							}
+						}
+					});
+				});
+
+				//Programatically call
+				$('#open-image').click(function (e) {
+					e.preventDefault();
+					$(this).ekkoLightbox();
+				});
+
+			});
+		</script>
+		<script src="./js/bootstrap.min.js"></script>
+
+
+
+	
+</body></html>
