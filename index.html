@@ -234,7 +234,11 @@
 			<div class="row featurette" id="Face">
 				<div class="col-md-7 col-md-push-5">
 				  <h2 class="featurette-heading">Face tracking Robot<span class="text-muted">...Minimalistic</span></h2>
-				  <p class="lead" >A robot capable of tracking a face . It isn't a robot yet , but I plan to use this system as the head of Hachiko.</p>
+				  <p class="lead" >A robot capable of tracking a face . It isn't a robot yet , but I plan to use this system as the head of Hachiko. <br /> The system works by using the Harr Cascade Filter avalible in most Computer Vision
+                      Libraries. This sub routine will give me the coordinates of the face . Then I define vectors to find the center of the face , as well as that of the iPhone screen . Then I compute the difference between these 
+                      vectors and I then use it as an input for Proportinal control system that I have running on the arduino . Based on the error , or difference between the vectors , I make compensations to minimize the error. 
+                      I send data from the iPhone to arduino via bluetooth. The reason I use an iPhone is because I do not have a camera that works with the ardunio/raspberry pi ! . <br /> 
+				  </p>
 							  <div class="row text-center">
 										<a href="#videoModal13" class="btn btn-warning"  role="button" data-toggle="modal"><span class="glyphicon glyphicon-film"></span>  Watch Video </a>
 										<a href="#Face" class="btn btn-default"  role="button" >  Details   <span class="glyphicon glyphicon-chevron-right"></span></a>
