@@ -1,3 +1,4 @@
 # SandeepChandapillai.github.io
 
-go to nandgate.net
+go to nandgate.org
+
